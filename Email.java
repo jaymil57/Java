@@ -28,7 +28,7 @@ public class Email {
 	}
 	//call a method ask for department
 	private String setDepartment() {
-		System.out.println("Department Code \n1 for Sales\n2 for Development\n3 For "
+		System.out.println("New Worker: " + firstName + "\nDepartment Code \n1 for Sales\n2 for Development\n3 For "
 				+ "Acocunting\n0 for none\n Enter Department Code: \n");
 		Scanner in = new Scanner(System.in);
 		int deptChoice = in.nextInt();
@@ -70,5 +70,10 @@ public class Email {
 		return alternateEmail;}
 	public String password () {
 		return password;}
+	
+	public String showInfo() {
+		return "Display Name: " + firstName + " " + lastName + " \nCompany Email:  " + email +
+				 " \nMailbox Capacity: " + mailboxCapacity + " mb ";
+	}
 	
 }

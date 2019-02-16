@@ -10,7 +10,7 @@ public class EmailApp {
 		em1.setAlternateEmail("js@gmail.com");
 		System.out.println("Your alternate email: " + em1.getalternateEmail());
 		
-		
+		System.out.println(em1.showInfo());
 	}
 
 }
